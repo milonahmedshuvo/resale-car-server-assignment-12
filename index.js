@@ -116,6 +116,7 @@ async function run() {
 
 
 
+        
         app.post('/advertise', async(req, res)=>{
             const ad = req.body 
             console.log(ad)
@@ -124,7 +125,7 @@ async function run() {
         })
 
 
-        
+
 
         app.get('/advertise', async(req, res)=>{
             const query = {}
