@@ -149,6 +149,8 @@ async function run() {
 
         })
         
+
+        
         app.get('/singupUsers/seller', async (req, res) => {
             const query = {}
             const alluser = await singupUsersCollection.find(query).toArray()
