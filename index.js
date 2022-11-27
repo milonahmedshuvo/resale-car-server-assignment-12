@@ -105,6 +105,7 @@ async function run() {
         })
 
 
+        
         app.delete('/addproduct/:id', async (req, res)=>{
              const id=req.params.id
              const filter={_id:ObjectId(id)}
@@ -116,7 +117,7 @@ async function run() {
 
 
 
-        
+
         app.post('/advertise', async(req, res)=>{
             const ad = req.body 
             console.log(ad)
